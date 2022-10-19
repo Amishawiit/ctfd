@@ -45,8 +45,6 @@ The installation process of ctfd
 —-------------------------------------------
 - sudo apt-get update
 - sudo apt-get -y install git net-tools
-- git clone https://github.com/CTFd/CTFd
- - Copy the the five files and paste in CTFd folder
 - cd CTFd
 - sudo ./setup4ssl.sh
 - sudo gedit docker-compose-production.yml
