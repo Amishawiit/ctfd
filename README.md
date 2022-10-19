@@ -41,20 +41,20 @@ CTFd is a Capture The Flag framework focusing on ease of use and customizability
 
 ## Install
 
-1. Install dependencies: `pip install -r requirements.txt`
-   1. You can also use the `prepare.sh` script to install system dependencies using apt.
-2. Modify [CTFd/config.ini](https://github.com/CTFd/CTFd/blob/master/CTFd/config.ini) to your liking.
-3. Use `python serve.py` or `flask run` in a terminal to drop into debug mode.
-
-You can use the auto-generated Docker images with the following command:
-
-`docker run -p 8000:8000 -it ctfd/ctfd`
-
-Or you can use Docker Compose with the following command from the source repository:
-
-`docker-compose up`
-
-Check out the [CTFd docs](https://docs.ctfd.io/) for [deployment options](https://docs.ctfd.io/docs/deployment/installation) and the [Getting Started](https://docs.ctfd.io/tutorials/getting-started/) guide
+The installation process of ctfd
+—-------------------------------------------
+● sudo apt-get update
+● sudo apt-get -y install git net-tools
+● git clone https://github.com/CTFd/CTFd
+Copy the the five files and paste in CTFd folder
+● cd CTFd
+● sudo ./setup4ssl.sh
+● sudo gedit docker-compose-production.yml
+Edit the hostname line in the docker-compose-production.yml file to match the hostname
+you have defined to point to your server.
+● sudo ./run-tls.sh
+Open http://localhost
+Set up the admin username and password
 
 ## Live Demo
 
