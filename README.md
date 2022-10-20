@@ -49,7 +49,7 @@ The installation process of ctfd
 - sudo ./setup4ssl.sh
 - sudo gedit docker-compose-production.yml
 - Edit the hostname line in the docker-compose-production.yml file to match the hostname
- - you have defined to point to your server.
+ you have defined to point to your server.
 - sudo ./run-tls.sh
 - Open http://localhost
 - Set up the admin username and password
